@@ -1,0 +1,45 @@
+<meta name="viewport" content="witdh=device-witdh, initial-scale=1.0">
+<body>
+  
+  <ion-content [fullscreen]="true">
+
+    <ion-grid>
+      <ion-row class="Login">
+        <ion-row>
+          <h3>Iniciar Sesión</h3>
+        </ion-row>
+      </ion-row>
+
+      <ion-row>
+        <div class="form-row">
+          <ion-item lines="full">
+            <ion-icon slot="start" name="mail"></ion-icon>
+            <ion-input [(ngModel)]="email" placeholder="juanperez@dominio.com" type="text"></ion-input>
+            <!--<ion-input [(ngModel)]="email" type="text"></ion-input>-->
+          </ion-item>
+          
+          <ion-item lines="full">
+            <ion-icon slot="start" name="key"></ion-icon>
+            <ion-input [(ngModel)]="password" placeholder="●●●●●●●" type="password"></ion-input>
+            <!--<ion-input [(ngModel)]="password" type="password"></ion-input>-->
+          </ion-item>
+           
+          <div class="contraseña" style="color:black;">
+            <a (click)="forgot()" slot="end">¿ Olvidaste tu contraseña ?</a>
+          </div>
+
+          <ion-row>
+        
+              <ion-button (click)="logIn()" style="margin-right: 8px; width: 145px;">Continuar</ion-button>
+              <ion-button href="/register" >Registrarse</ion-button>
+           
+          </ion-row>
+
+        </div>
+      </ion-row>
+    </ion-grid>
+  
+  
+  </ion-content>
+</body>
+
